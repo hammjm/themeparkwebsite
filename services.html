@@ -1,17 +1,98 @@
-<html>
-  <head>
-    <title>Crazy Coaster Theme Park</title>
-    <meta></meta>
-   </head>
-   
-   <body>
-   <container>
-    <nav></nav>
-    <div></div>
-    <div>
-      <div></div>
-    </div>
-   </container>
-    <footer></footer>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section -->
+<head>
+  <title>Crazy Coaster Theme Park</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The funniest park on earth">
+  <meta name="author" content="Web-dev team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="'Theme Park', Attractions">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<!-- Visible document body -->
+<body>
+
+    
+<section id="main">    
+ <!--Nav bar-->
+    <nav>
+        <ul>
+            <a href="tickets.html">Tickets</a>
+            <a href="attractions.html">Attractions</a>
+            <a href="services.html">Services</a>
+            <a href="map.html">Map</a>
+        </ul>        
+    </nav>    
+    
+<!--The big header-->
+    <header>
+        <img src='images/services_banner.png' alt='Services Banner'>
+    </header>
+    
+    <!--The black nav bar/button bar-->
+    <div id='theOtherNavBar'>
+        <ul>
+            <a href="tickets.html">Get Tickets</a>
+            <a href="attractions.html">Attractions</a>
+            <a href="services.html">Services</a>
+            <a href="map.html">Map</a>
+        </ul>
+    </div>   
+        
+
+<!--The big central block with articles and images-->    
+    <section>
+		<div id='tickets'>
+			<h2> Buy Tickets </h2>
+			<select><option value="tickets">Tickets</option></select>
+			<select><option value="promo1">PROMO 1</option></select>
+			<select><option value="promo2">PROMO 2</option></select>
+			<select><option value="seasonPass">SEASON PASS</option></select>
+		</div>
+	</section>
+	<section>
+		<div id='otherServices'>
+			<h2> Other Services </h2>
+			<div id='servicesLeftCol'>
+        		<img src="images/attraction.png" alt='Service 1'>
+        		<img src="images/attraction.png" alt='Service 2'>
+			</div>
+			<div id='servicesRightCol'>
+				<p>Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.</p>	
+				<p>Mauris leo ligula, volutpat ac massa id, iaculis vulputate felis. Integer non auctor sem, vel imperdiet diam. Etiam imperdiet enim sit amet iaculis fermentum. Donec porttitor urna sit amet ipsum laoreet, nec sodales erat fermentum. Nullam est leo, interdum sit amet erat.</p>
+			</div>
+    </section> 
+	<section>
+		<div id='food'>
+   			<h2> Food </h2>
+			<div id='foodLeftCol'>
+        		<img src="images/attraction.png" alt='Food photo 1'>
+				<p> Sed cursus ipsum vel nulla tristique feugiat. Pellentesque sit amet ornare mi. Nunc quis imperdiet nibh. Nullam sapien velit, ultricies.</p>
+
+        		<img src="images/attraction.png" alt='Food photo 2'>
+				<p>Quisque eu ipsum egestas, scelerisque enim at, auctor lacus. Mauris feugiat purus ac nisi viverra varius. Nunc commodo elit ut.</p>	
+			</div>
+
+			<div id='foodRightCol'>
+				<img src="images/map_small.png" alt='Map 1'>
+				<img src="images/map_small.png" alt='Map 2'>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div id="ads">
+        	<img src="images/ad.png" alt='Ad 1'>
+        	<img src="images/ad.png" alt='Ad 2'>
+		</div>
+	</section>
+
+<!--Footer-->    
+    <footer>
+        &copy;2019, The WebDev Team BScCS-UoL 
+    </footer>    
+        
+</body>
 </html>

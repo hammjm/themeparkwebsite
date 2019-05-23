@@ -3,3 +3,4 @@ A team project for the University of London. We are making a mock theme park web
 Add your name below if you wish:
   1. John Hamm
   2. Leo Rivas
+  3. Amanda Bizzinotto

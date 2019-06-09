@@ -1,4 +1,4 @@
-#main_nav{
+nav{
                
                
                 border-radius: 50px;
@@ -14,7 +14,7 @@
 
 }
 
-#main_nav > ul > a{
+nav > ul > a{
     padding: 10px;
     text-decoration: none;
     font-family: sans-serif;

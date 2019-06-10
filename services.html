@@ -4,6 +4,8 @@
 <!-- Head section -->
 <head>
   <title>Crazy Coaster Theme Park</title>
+    <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/96deacfc14.js"></script>
   <meta charset="utf-8">
   <meta name="description" content="The funniest park on earth">
   <meta name="author" content="Web-dev team">
@@ -14,27 +16,26 @@
 
 <!-- Visible document body -->
 <body>
-
     
-<section id="main" class='main'>    
+<section id="main">    
  <!--Nav bar-->
-    <nav id='services_main_nav' class='main_nav'>
+    <nav>
         <ul>
-            <a href="index.html">Home</a>
-            <a href="tickets.html">Tickets</a>
+			<a href="index.html">Home</a>
+            <a href="services.html">Tickets</a>
             <a href="attractions.html">Attractions</a>
             <a href="services.html">Services</a>
-            <a href="map.html">Map</a>
+            <a href="index.html#mapImage">Map</a>
         </ul>        
     </nav>    
     
 <!--The big header-->
     <header>
-        <img src='images/services_banner.png' alt='Services Banner'>
+        <p><i class="fal fa-tombstone"></i> Services <i class="fal fa-tombstone"></i></p>
     </header>
     
     <!--The black nav bar/button bar-->
-    <div id='theOtherNavBar' class='secondary_nav'>
+    <div id="theOtherNavBar">
         <ul>
             <a href="tickets.html">Get Tickets</a>
             <a href="attractions.html">Attractions</a>
@@ -46,52 +47,89 @@
 
 <!--The big central block with articles and images-->    
     <section>
-		<div id='tickets'>
-			<h2> Buy Tickets </h2>
-			<select><option value="tickets">Tickets</option></select>
-			<select><option value="promo1">PROMO 1</option></select>
-			<select><option value="promo2">PROMO 2</option></select>
-			<select><option value="seasonPass">SEASON PASS</option></select>
+        <!--The Buy Tickets block-->
+		<div id="tickets">
+			<h2 id="ticketsText"> Buy Tickets </h2>
+            <div id="selectBlock">
+			<select id="ticketsSelect"><option value="tickets" id="ticketsOption">Tickets</option></select>
+			<select id="ticketsSelect"><option value="promo1" id="ticketsOption">PROMO 1</option></select>
+			<select id="ticketsSelect"><option value="promo2" id="ticketsOption">PROMO 2</option></select>
+			<select id="ticketsSelect"><option value="seasonPass" id="ticketsOption">SEASON PASS</option></select>
+            </div>
 		</div>
 	</section>
 	<section>
-		<div id='otherServices'>
-			<h2> Other Services </h2>
-			<div id='servicesLeftCol'>
-        		<img src="images/attraction.png" alt='Service 1'>
-        		<img src="images/attraction.png" alt='Service 2'>
-			</div>
-			<div id='servicesRightCol'>
-				<p>Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.</p>	
-				<p>Mauris leo ligula, volutpat ac massa id, iaculis vulputate felis. Integer non auctor sem, vel imperdiet diam. Etiam imperdiet enim sit amet iaculis fermentum. Donec porttitor urna sit amet ipsum laoreet, nec sodales erat fermentum. Nullam est leo, interdum sit amet erat.</p>
-			</div>
-    </section> 
+        <!--The Other Services block-->
+		<div id="otherServices">
+			<h2 id="servicesText"><i class="far fa-book-dead"></i> Other Services <i class="far fa-book-dead"></i></h2>
+        </div>
+    </section>
+    <section>    
+        <div id="servicesLeftCol">
+            <article>
+                <h2 id="subHeader"><i class="fal fa-hotel"></i> Hotel <i class="fal fa-hotel"></i></h2>
+                <img src='images/Park-Hotel-Small.png' alt='Hotel' id="columnImage">
+                <p id="mainTextDescription">
+                    Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
+                </p>
+            </article>
+        </div>
+        
+        <div id="servicesRightCol">
+            <article>
+                <h2 id="subHeader"><i class="fal fa-broom"></i> Season Pass <i class="fal fa-broom"></i></h2>
+                <img src='images/Park-Season-Pass-Small.png' alt='Season Pass' id="columnImage">
+                <p id="mainTextDescription">
+                    Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
+                </p>
+            </article>
+        </div>
+    </section>
 	<section>
-		<div id='food'>
-   			<h2> Food </h2>
-			<div id='foodLeftCol'>
-        		<img src="images/attraction.png" alt='Food photo 1'>
-				<p> Sed cursus ipsum vel nulla tristique feugiat. Pellentesque sit amet ornare mi. Nunc quis imperdiet nibh. Nullam sapien velit, ultricies.</p>
-
-        		<img src="images/attraction.png" alt='Food photo 2'>
-				<p>Quisque eu ipsum egestas, scelerisque enim at, auctor lacus. Mauris feugiat purus ac nisi viverra varius. Nunc commodo elit ut.</p>	
-			</div>
-
-			<div id='foodRightCol'>
-				<img src="images/map_small.png" alt='Map 1'>
-				<img src="images/map_small.png" alt='Map 2'>
-			</div>
+        <!--The Food block-->
+		<div id="otherServices">
+   			<h2 id="servicesText"><i class="far fa-hat-chef"></i> Food <i class="far fa-hat-chef"></i></h2>
+        </div>
+    </section>
+    <section>    
+        <div id="servicesLeftCol">
+            <article>
+                <h2 id="subHeader"><i class="far fa-cauldron"></i> Restaurant <i class="far fa-cauldron"></i></h2>
+                <img src='images/Park-Restaurant-Small.png' alt='Restaurant' id="columnImage">
+                <p id="mainTextDescription">
+                    Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
+                </p>
+            </article>
+        </div>
+        
+        <div id="servicesRightCol">
+            <article>
+                <h2 id="subHeader"><i class="fal fa-flask-poison"></i> Bar <i class="fal fa-flask-poison"></i></h2>
+                <img src='images/Park-Bar-Small.png' alt='Bar' id="columnImage">
+                <p id="mainTextDescription">
+                    Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
+                </p>
+            </article>
+        </div>
+    </section>
+	<section>
+        <!--The Ads section-->
+		<div id="adsLeft">
+            <article>
+                <img src="images/ad.png" alt='Ad 1' id="adImage">
+            </article>
+        </div>
+        <div id='adsRight'>
+            <article>
+                <img src="images/ad.png" alt='Ad 2' id="adImage">
+            </article>
 		</div>
 	</section>
-	<section>
-		<div id="ads">
-        	<img src="images/ad.png" alt='Ad 1'>
-        	<img src="images/ad.png" alt='Ad 2'>
-		</div>
-	</section>
+    
+    </section>
 
 <!--Footer-->    
-    <footer>
+    <footer id="footer">
         &copy;2019, The WebDev Team BScCS-UoL 
     </footer>    
         

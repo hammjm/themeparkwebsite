@@ -3,6 +3,8 @@
 
 <!-- Head section -->
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/96deacfc14.js"></script>
   <title>Crazy Coaster Theme Park</title>
   <meta charset="utf-8">
   <meta name="description" content="The funniest park on earth">
@@ -16,28 +18,29 @@
 <body>
 
     
-<div id='home_main' class='main'>    
+<section id="main">    
  <!--Nav bar-->
-    <nav id='home_main_nav' class='main_nav'>
+    <nav>
         <ul>
             <a href="index.html">Home</a>
-            <a href="tickets.html">Tickets</a>
+            <a href="services.html">Tickets</a>
             <a href="attractions.html">Attractions</a>
             <a href="services.html">Services</a>
-            <a href="map.html">Map</a>
+            <a href="#mapImage">Map</a>
         </ul>        
     </nav>    
-
+ 
     
     
 <!--The big header-->
     <header>
-        <h1>Crazy Coaster Theme Park</h1>
-       
+        <h1><i class="far fa-jack-o-lantern"></i> Crazy Coaster Theme Park <i class="far fa-jack-o-lantern"></i></h1>
+        Don't mind the clown with the red baloon
+        
     </header>
     
     <!--The black nav bar/button bar-->
-    <div id='home_theOtherNavBar' class='secondary_nav'>
+    <div id="theOtherNavBar">
         <ul>
             <a href="tickets.html">Get Tickets</a>
             <a href="attractions.html">Attractions</a>
@@ -48,59 +51,57 @@
         
 
 <!--The big central block with articles and images-->    
-  
-<div id='home_row' class='row'> 
-        <div id='home_leftColumn' class='column'>
+    <section>    
+        <div id="leftColumn">
             <article>
-                <h2>The Ferris Wheel</h2>
-                <img src='images/Park-Ferris-Wheel-Small.png' alt='Ferris Wheel'>
-                <p>
+                <h2 id="subHeader"><i class="far fa-bat"></i> The Ferris Wheel <i class="far fa-bat"></i></h2>
+                <img src='images/Park-Ferris-Wheel-Small.png' alt='Ferris Wheel' id="columnImage">
+                <p id="mainTextDescription">
                     Keep your hands away from rusty parts, don't mind the cracks!
                 </p>
             </article>
             <article>
-                <h2>The Magic Castle of Horrors</h2>
-                <img src='images/Park-Castle-Small.png' alt='Castle'>
-                <p>
+                <h2 id="subHeader"><i class="far fa-coffin"></i> The Magic Castle of Horrors <i class="far fa-coffin"></i></h2>
+                <img src='images/Park-Castle-Small.png' alt='Castle'  id="columnImage">
+                <p id="mainTextDescription">
                     Oh yeah everyone loves castles. The only in town with several confirmed deaths, careful!
                 </p>
             </article>
         </div>
         
-        <div id='home_rightColumn' class='column'>
+        <div id="rightColumn">
             <article>
-                <h2>The Shitty Rollercoaster</h2>
-                <img src='images/Park-Roller-Coaster-Small.png' alt='RollerCoaster'>
-                <p>
-                    Please use dipers, that's all we can say.
+                <h2 id="subHeader"><i class="far fa-spider-web"></i> The Shitty Rollercoaster <i class="far fa-spider-web"></i></h2>
+                <img src='images/Park-Roller-Coaster-Small.png' alt='RollerCoaster' id="columnImage">
+                <p id="mainTextDescription">
+                    Please use diapers, that's all we can say.
                 </p>
             </article>
             <article>
-                <h2>The Slowest Carrousel</h2>
-                <img src='images/Park-Carrousel-Small.png' alt='Carrousel'>
-                <p>
+                <h2 id="subHeader"><i class="far fa-ghost"></i> The Slowest Carrousel <i class="far fa-ghost"></i></h2>
+                <img src='images/Park-Carrousel-Small.png' alt='Carrousel' id="columnImage">
+                <p id="mainTextDescription">
                    So boring...
                 </p>
             </article>
         </div>
-
-</div> 
+    </section>
+  
     
 <!--The map section-->    
-   
-        <div id='home_map_section' class='map_section'> 
-        <h1>Getting to the Park</h1>
-        <p>Just Past the cemetery, a bridge will bring you to the main door. No, there are no zombies in the way, all of them are here!
+    <section>
+        <div id="mainMap">
+        <h1 id="mapHeader"><i class="far fa-skull-crossbones"></i> Getting to the Park <i class="far fa-skull-crossbones"></i></h1>
+        <p id="mapText">Just Past the cemetery, a bridge will bring you to the main door. No, there are no zombies in the way, all of them are here!
         </p>
-        <img src="images/map.jpg" alt='Map'>
-        </div>      
-      
-   
+        <img src="images/map.jpg" alt='Map' id="mapImage">
+        </div>
+    </section>
 
-</div>    
+</section>    
     
 <!--Footer-->    
-    <footer>
+    <footer id="footer">
         &copy;2019, The WebDev Team BScCS-UoL 
     </footer>    
 

@@ -44,9 +44,40 @@ nav{
 nav > ul > a{
     text-decoration: none;
     font-family: creepster, cursive;
-    color: white;
     margin-bottom: 1;
     color: #ff7518;
+    padding: 30px;
+}
+
+nav > ul > a:hover {
+    text-decoration: none;
+    font-family: creepster, cursive;
+    color: #28641c;
+    margin-bottom: 1;
+    padding: 30px;
+}
+
+#navMenuIcon {
+    visibility: hidden;
+}
+
+nav > ul > a:hover #navMenuIcon {
+    visibility: visible;
+}
+
+#navBarIcon {
+    visibility: hidden;
+}
+
+#theOtherNavBar > ul > a:hover #navBarIcon {
+    visibility: visible;
+}
+
+#theOtherNavBar > ul > a:hover {
+    text-decoration: none;
+    font-family: creepster, cursive;
+    color: #28641c;
+    margin-bottom: 1;
     padding: 30px;
 }
 

@@ -24,117 +24,243 @@ img
 
 */
 
-body{
-    font-family: fantasy;
+html {
+    background: #ff7518;
 }
-
-/*main section*/
-.main{
-               
-               
+nav{
                 border-radius: 50px;
                 padding: 0px;
-                margin: auto;
-                background: pink;
+                margin: 0px;
+                background: black;
                 text-align: center;
-                max-width: 1024px;
+                font-family:sans-serif;
                 border: solid;
                 box-shadow: black;
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
                 text-decoration: none;
-
+                color: #ff7518;
 }
 
-/*upper navigation bar*/
-.main_nav > ul > a{
-    padding-bottom: 5px;
-    padding-left:50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    text-align: center;
+nav > ul > a{
     text-decoration: none;
-
+    font-family: creepster, cursive;
     color: white;
-    border: solid;
-    border-radius: 20px;
-    border-color: red;
-    background-color:blueviolet;
-    
-        
+    margin-bottom: 1;
+    color: #ff7518;
+    padding: 30px;
 }
-
 
 header{
-   
+    font-family:creepster, cursive;
     font-size: 3em;
     text-align: center;
-    background: #f5f7a3;
+    background: black;
     margin-top: 1;
-    margin-bottom: 1;
-    color:#d820e5;
-    
+    color: #ff7518;
+    padding: 30px;
 }
 
 h1{
-    margin: 1px;
+    margin-top: 1px;
 }
 
-h2{
-    color:#944499
-}
-
-/*second nav bar*/
-.secondary_nav{
-    font-family: fantasy;
+#theOtherNavBar{
+    font-family: sans-serif;
     text-align: center;
-    border: 1px dashed;
-    margin: 1px;
-        
+    border: dashed;
+    background: #ff7518;
 }
 
-.secondary_nav > ul > a{
-    padding: 20px;
+#theOtherNavBar > ul > a{
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-decoration: none;
+    color: black;
+    font-family: creepster, cursive;
+    font-size: 25px;
+    padding-right: 40px;
 }
 
+#leftColumn{
+    display: block;
+    background: black;
+    margin: 0px;
+    width: 49%;
+    float:left;
+    height: 970px;
+}
 
-.column {
+#attractionsLeftCol{
+    display: block;
+    background: black;
+    margin: 0px;
+    width: 49%;
+    float:left;
+    height: 1200px;
+}
+
+#servicesLeftCol{
+    display: block;
+    background: black;
+    margin: 0px;
+    width: 49%;
+    float:left;
+    height: 650px;
+}
+
+#rightColumn{
+    display: block;
+    background: black;
+    margin: 0px;
+    width: 49%;
+    float:right;
+    height: 970px;
+}
+
+#attractionsRightCol{
+    display: block;
+    background: black;
+    margin: 0px;
+    width: 49%;
+    float:right;
+    height: 1200px;
+}
+
+#servicesRightCol{
+    display: block;
+    background: black;
+    margin: 0px;
+    width: 49%;
+    float:right;
+    height: 650px;
+}
+
+#subHeader {
+    text-align: center;
+    color: #ff7518;
+    font-family: creepster, cursive;
+    font-size: 35px;
+}
+
+#columnImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+    border-color: #ff7518;
+}
+
+#mainTextDescription {
+    text-align: center;
+    color: #ff7518;
+    font-size: 25px;
+    font-family: creepster, cursive;
+}
+
+#mainMap {
+    display: block;
+    padding-bottom: 30px;
+}
+
+#mapHeader {
+    text-align: center;
+    color: black;
+    font-family: creepster, cursive;
+    font-size: 45px;
+}
+
+#mapText {
+    text-align: center;
+    color: black;
+    font-family: creepster, cursive;
+    font-size: 30px;
+}
+
+#mapImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+    border-color: black;
+}
+
+#servicesText {
+    text-align: center;
+    color: black;
+    font-family: creepster, cursive;
+    font-size: 30px;
+}
+
+#tickets {
+    display: block;
+    background: black;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 0px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#ticketsText {
+    text-align: center;
+    color: #ff7518;
+    font-family: creepster, cursive;
+    font-size: 30px;
+}
+
+#selectBlock {
+    padding-left: 35%;
+    padding-bottom: 20px;
+}
+
+#ticketsSelect {
+    display: block;
+    position: relative;
+    font-family: creepster, cursive;
+    float: left;
+    background: #ff7518;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+#ticketsOption {
+    display: block;
+    float: left;
+}
+
+#adsLeft {
+    display: block;
     float: left;
     width: 49%;
-
-
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.row{
-     margin: 2px 2px 2px 2px;
-     background: #fff0b3;
-    
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  
+#adsRight {
+    display: block;
+    float: right;
+    width: 49%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-
-.map_section{
-    margin:0px;
-    width: 100%;
+#adImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 4px;
+    width: 600px;
 }
 
-footer{
-   
-    padding-top: 5px;
-    text-align: center
-    
-    
-}
-
-img{
-   
-    background: yellow;
-    border: 3px dashed;
+#footer {
+    text-align: center;
 }
 

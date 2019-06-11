@@ -17,16 +17,19 @@
 <!-- Visible document body -->
 <body>
 
+<audio autoplay>
+    <source src="audio/evilLaugh.mp3" type="audio/mpeg">
+</audio>
     
 <section id="main">    
  <!--Nav bar-->
     <nav>
         <ul>
-		<a href="index.html">Home</a>
-            <a href="services.html">Tickets</a>
-            <a href="attractions.html">Attractions</a>
-            <a href="services.html">Services</a>
-            <a href="index.html#mapImage">Map</a>
+            <a href="index.html"><i class="fab fa-fort-awesome" id="navMenuIcon"></i> Home <i class="fab fa-fort-awesome" id="navMenuIcon"></i></a>
+            <a href="services.html"><i class="far fa-ticket-alt" id="navMenuIcon"></i> Tickets <i class="far fa-ticket-alt" id="navMenuIcon"></i></a>
+            <a href="attractions.html"><i class="fal fa-alicorn" id="navMenuIcon"></i> Attractions <i class="fal fa-alicorn" id="navMenuIcon"></i></a>
+            <a href="services.html"><i class="far fa-concierge-bell" id="navMenuIcon"></i> Services <i class="far fa-concierge-bell" id="navMenuIcon"></i></a>
+            <a href="index.html#mapImage"><i class="far fa-map-signs" id="navMenuIcon"></i> Map <i class="far fa-map-signs" id="navMenuIcon"></i></a>
         </ul>        
     </nav>    
  
@@ -40,18 +43,24 @@
     <!--The black nav bar/button bar-->
     <div id="theOtherNavBar">
         <ul>
-            <a href="services.html">Get Tickets</a>
-            <a href="attractions.html">Attractions</a>
-            <a href="services.html">Services</a>
-            <a href="index.html#mapImage">Map</a>
+            <a href="services.html"><i class="far fa-ticket-alt" id="navBarIcon"></i> Get Tickets</a>
+            <a href="attractions.html"><i class="fal fa-alicorn" id="navBarIcon"></i> Attractions</a>
+            <a href="services.html"><i class="far fa-concierge-bell" id="navBarIcon"></i> Services</a>
+            <a href="index.html#mapImage"><i class="far fa-map-signs" id="navBarIcon"></i> Map</a>
         </ul>
-    </div>   
-        
+    </div>    
 
 <!--The big central block with articles and images-->    
     <section>
         
         <div id="attractionsLeftCol">
+            <article>
+                <h2 id="subHeader"><i class="far fa-cloud-moon"></i> The Night Tour <i class="far fa-cloud-moon"></i></h2>
+                <img src='images/Park-Attractions-Gif.gif' alt='Horror GIF' id="columnImage">
+                <p id="mainTextDescription">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ex consectetur egestas tincidunt. Pellentesque at sodales ligula. Etiam dignissim interdum quam, eget feugiat tellus bibendum nec. In vitae leo fermentum, consequat est non, blandit felis. Etiam viverra lacus nec risus aliquet.
+                </p>
+            </article>
             <article>
                 <h2 id="subHeader"><i class="far fa-bat"></i> The Ferris Wheel <i class="far fa-bat"></i></h2>
                 <img src='images/Park-Ferris-Wheel-Small.png' alt='Ferris Wheel' id="columnImage">
@@ -69,6 +78,13 @@
         </div>
         
         <div id='attractionsRightCol'>
+            <article>
+                <h2 id="subHeader"><i class="far fa-mask"></i> The Circus <i class="far fa-mask"></i></h2>
+                <img src='images/Park-Attractions-Gif2.gif' alt='Horror GIF' id="columnImage">
+                <p id="mainTextDescription">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ex consectetur egestas tincidunt. Pellentesque at sodales ligula. Etiam dignissim interdum quam, eget feugiat tellus bibendum nec. In vitae leo fermentum, consequat est non, blandit felis. Etiam viverra lacus nec risus aliquet.
+                </p>
+            </article>
             <article>
                 <h2 id="subHeader"><i class="far fa-spider-web"></i> The Shitty Rollercoaster <i class="far fa-spider-web"></i></h2>
                 <img src='images/Park-Roller-Coaster-Small.png' alt='RollerCoaster' id="columnImage">

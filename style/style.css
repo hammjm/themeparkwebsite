@@ -29,55 +29,51 @@ html {
 }
 nav{
                 border-radius: 50px;
-                padding: 0px;
+                padding: 15px;
                 margin: 0px;
                 background: black;
                 text-align: center;
                 font-family:sans-serif;
                 border: solid;
-                box-shadow: black;
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
                 text-decoration: none;
                 color: #ff7518;
 }
 
-nav > ul > a{
+nav > a {
     text-decoration: none;
     font-family: creepster, cursive;
-    margin-bottom: 1;
     color: #ff7518;
     padding: 30px;
 }
 
-nav > ul > a:hover {
+nav > a:hover {
     text-decoration: none;
     font-family: creepster, cursive;
     color: #28641c;
-    margin-bottom: 1;
     padding: 30px;
 }
 
-#navMenuIcon {
+.navMenuIcon {
     visibility: hidden;
 }
 
-nav > ul > a:hover #navMenuIcon {
+nav > a:hover .navMenuIcon {
     visibility: visible;
 }
 
-#navBarIcon {
+.navBarIcon {
     visibility: hidden;
 }
 
-#theOtherNavBar > ul > a:hover #navBarIcon {
+#theOtherNavBar > a:hover .navBarIcon {
     visibility: visible;
 }
 
-#theOtherNavBar > ul > a:hover {
+#theOtherNavBar > a:hover {
     text-decoration: none;
     font-family: creepster, cursive;
     color: #28641c;
-    margin-bottom: 1;
     padding: 30px;
 }
 
@@ -86,7 +82,6 @@ header{
     font-size: 3em;
     text-align: center;
     background: black;
-    margin-top: 1;
     color: #ff7518;
     padding: 30px;
 }
@@ -100,9 +95,10 @@ h1{
     text-align: center;
     border: dashed;
     background: #ff7518;
+    padding: 10px;
 }
 
-#theOtherNavBar > ul > a{
+#theOtherNavBar > a{
     padding-top: 20px;
     padding-bottom: 20px;
     text-decoration: none;
@@ -127,10 +123,10 @@ h1{
     margin: 0px;
     width: 49%;
     float:left;
-    height: 1200px;
+    height: 1850px;
 }
 
-#servicesLeftCol{
+.servicesLeftCol{
     display: block;
     background: black;
     margin: 0px;
@@ -154,10 +150,10 @@ h1{
     margin: 0px;
     width: 49%;
     float:right;
-    height: 1200px;
+    height: 1850px;
 }
 
-#servicesRightCol{
+.servicesRightCol{
     display: block;
     background: black;
     margin: 0px;
@@ -166,14 +162,14 @@ h1{
     height: 650px;
 }
 
-#subHeader {
+.subHeader {
     text-align: center;
     color: #ff7518;
     font-family: creepster, cursive;
     font-size: 35px;
 }
 
-#columnImage {
+.columnImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -183,7 +179,7 @@ h1{
     border-color: #ff7518;
 }
 
-#mainTextDescription {
+.mainTextDescription {
     text-align: center;
     color: #ff7518;
     font-size: 25px;
@@ -219,7 +215,7 @@ h1{
     border-color: black;
 }
 
-#servicesText {
+.servicesText {
     text-align: center;
     color: black;
     font-family: creepster, cursive;
@@ -248,7 +244,7 @@ h1{
     padding-bottom: 20px;
 }
 
-#ticketsSelect {
+.ticketsSelect {
     display: block;
     position: relative;
     font-family: creepster, cursive;
@@ -260,13 +256,13 @@ h1{
     padding-right:10px;
 }
 
-#ticketsSelect:hover {
+.ticketsSelect:hover {
     border-color: #28641c;
     border-width: 4px;
     color: #28641c;
 }
 
-#ticketsSelect:focus {
+.ticketsSelect:focus {
     border-color: #28641c;
     border-width: 4px;
     color: #28641c;
@@ -288,7 +284,7 @@ h1{
     padding-bottom: 30px;
 }
 
-#adImage {
+.adImage {
     display: block;
     margin-left: auto;
     margin-right: auto;

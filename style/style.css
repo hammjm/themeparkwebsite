@@ -26,6 +26,8 @@ nav{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     text-decoration: none;
     color: #ff7518;
+    width:90%;
+    margin:auto
 }
 
 nav > a {

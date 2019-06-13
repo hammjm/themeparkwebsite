@@ -298,3 +298,27 @@ h1{
     text-align: center;
 }
 
+
+
+/*test*/
+.column {
+    float: left;
+    width: 48%;
+    background:#000000;
+    margin:5px orange;   
+
+}
+
+.row{
+     margin: 2px 2px 2px 2px;
+     background: #000000;
+    
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+

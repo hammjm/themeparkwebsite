@@ -1,6 +1,10 @@
 /*Set the webpage's background*/
 html {
     background: #ff7518;
+    width: 75%;
+   
+    margin: auto;
+    
 }
 
 /*Top navigation bar styling*/
@@ -46,7 +50,7 @@ header{
     font-size: 2.5em;
     text-align: center;
     background: black;
-    color: #995c00;
+    color: #ff7518;
     padding: 30px;
      background-image: url("/images/background.jpg");
     background-repeat: no-repeat;

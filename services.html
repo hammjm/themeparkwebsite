@@ -20,14 +20,12 @@
 <section id="main">    
  <!--Nav bar-->
     <nav>
-        <ul>
-            <a href="index.html"><i class="fab fa-fort-awesome" id="navMenuIcon"></i> Home <i class="fab fa-fort-awesome" id="navMenuIcon"></i></a>
-            <a href="services.html"><i class="far fa-ticket-alt" id="navMenuIcon"></i> Tickets <i class="far fa-ticket-alt" id="navMenuIcon"></i></a>
-            <a href="attractions.html"><i class="fal fa-alicorn" id="navMenuIcon"></i> Attractions <i class="fal fa-alicorn" id="navMenuIcon"></i></a>
-            <a href="services.html"><i class="far fa-concierge-bell" id="navMenuIcon"></i> Services <i class="far fa-concierge-bell" id="navMenuIcon"></i></a>
-            <a href="index.html#mapImage"><i class="far fa-map-signs" id="navMenuIcon"></i> Map <i class="far fa-map-signs" id="navMenuIcon"></i></a>
-        </ul>        
-    </nav>    
+            <a href="index.html"><i class="fab fa-fort-awesome navMenuIcon"></i> Home <i class="fab fa-fort-awesome navMenuIcon"></i></a>
+            <a href="services.html"><i class="far fa-ticket-alt navMenuIcon"></i> Tickets <i class="far fa-ticket-alt navMenuIcon"></i></a>
+            <a href="attractions.html"><i class="fal fa-alicorn navMenuIcon"></i> Attractions <i class="fal fa-alicorn navMenuIcon"></i></a>
+            <a href="services.html"><i class="far fa-concierge-bell navMenuIcon"></i> Services <i class="far fa-concierge-bell navMenuIcon"></i></a>
+            <a href="index.html#mapImage"><i class="far fa-map-signs navMenuIcon"></i> Map <i class="far fa-map-signs navMenuIcon"></i></a>       
+    </nav>  
     
 <!--The big header-->
     <header>
@@ -36,12 +34,10 @@
     
     <!--The black nav bar/button bar-->
     <div id="theOtherNavBar">
-        <ul>
-            <a href="services.html"><i class="far fa-ticket-alt" id="navBarIcon"></i> Get Tickets</a>
-            <a href="attractions.html"><i class="fal fa-alicorn" id="navBarIcon"></i> Attractions</a>
-            <a href="services.html"><i class="far fa-concierge-bell" id="navBarIcon"></i> Services</a>
-            <a href="index.html#mapImage"><i class="far fa-map-signs" id="navBarIcon"></i> Map</a>
-        </ul>
+            <a href="services.html"><i class="far fa-ticket-alt navBarIcon"></i> Get Tickets</a>
+            <a href="attractions.html"><i class="fal fa-alicorn navBarIcon"></i> Attractions</a>
+            <a href="services.html"><i class="far fa-concierge-bell navBarIcon"></i> Services</a>
+            <a href="index.html#mapImage"><i class="far fa-map-signs navBarIcon"></i> Map</a>
     </div>  
 
 <!--The big central block with articles and images-->    
@@ -50,35 +46,35 @@
 		<div id="tickets">
 			<h2 id="ticketsText"> Buy Tickets </h2>
             <div id="selectBlock">
-			<select id="ticketsSelect"><option value="tickets" id="ticketsOption">Tickets</option></select>
-			<select id="ticketsSelect"><option value="promo1" id="ticketsOption">PROMO 1</option></select>
-			<select id="ticketsSelect"><option value="promo2" id="ticketsOption">PROMO 2</option></select>
-			<select id="ticketsSelect"><option value="seasonPass" id="ticketsOption">SEASON PASS</option></select>
+			<select class="ticketsSelect"><option value="tickets" class="ticketsOption">Tickets</option></select>
+			<select class="ticketsSelect"><option value="promo1" class="ticketsOption">PROMO 1</option></select>
+			<select class="ticketsSelect"><option value="promo2" class="ticketsOption">PROMO 2</option></select>
+			<select class="ticketsSelect"><option value="seasonPass" class="ticketsOption">SEASON PASS</option></select>
             </div>
 		</div>
 	</section>
 	<section>
         <!--The Other Services block-->
-		<div id="otherServices">
-			<h2 id="servicesText"><i class="far fa-book-dead"></i> Other Services <i class="far fa-book-dead"></i></h2>
+		<div class="otherServices">
+			<h2 class="servicesText"><i class="far fa-book-dead"></i> Other Services <i class="far fa-book-dead"></i></h2>
         </div>
     </section>
     <section>    
-        <div id="servicesLeftCol">
+        <div class="servicesLeftCol">
             <article>
-                <h2 id="subHeader"><i class="fal fa-hotel"></i> Hotel <i class="fal fa-hotel"></i></h2>
-                <img src='images/Park-Hotel-Small.png' alt='Hotel' id="columnImage">
-                <p id="mainTextDescription">
+                <h2 class="subHeader"><i class="fal fa-hotel"></i> Hotel <i class="fal fa-hotel"></i></h2>
+                <img src='images/Park-Hotel-Small.png' alt='Hotel' class="columnImage">
+                <p class="mainTextDescription">
                     Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
                 </p>
             </article>
         </div>
         
-        <div id="servicesRightCol">
+        <div class="servicesRightCol">
             <article>
-                <h2 id="subHeader"><i class="fal fa-broom"></i> Season Pass <i class="fal fa-broom"></i></h2>
-                <img src='images/Park-Season-Pass-Small.png' alt='Season Pass' id="columnImage">
-                <p id="mainTextDescription">
+                <h2 class="subHeader"><i class="fal fa-broom"></i> Season Pass <i class="fal fa-broom"></i></h2>
+                <img src='images/Park-Season-Pass-Small.png' alt='Season Pass' class="columnImage">
+                <p class="mainTextDescription">
                     Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
                 </p>
             </article>
@@ -86,26 +82,26 @@
     </section>
 	<section>
         <!--The Food block-->
-		<div id="otherServices">
-   			<h2 id="servicesText"><i class="far fa-hat-chef"></i> Food <i class="far fa-hat-chef"></i></h2>
+		<div class="otherServices">
+   			<h2 class="servicesText"><i class="far fa-hat-chef"></i> Food <i class="far fa-hat-chef"></i></h2>
         </div>
     </section>
     <section>    
-        <div id="servicesLeftCol">
+        <div class="servicesLeftCol">
             <article>
-                <h2 id="subHeader"><i class="far fa-cauldron"></i> Restaurant <i class="far fa-cauldron"></i></h2>
-                <img src='images/Park-Restaurant-Small.png' alt='Restaurant' id="columnImage">
-                <p id="mainTextDescription">
+                <h2 class="subHeader"><i class="far fa-cauldron"></i> Restaurant <i class="far fa-cauldron"></i></h2>
+                <img src='images/Park-Restaurant-Small.png' alt='Restaurant' class="columnImage">
+                <p class="mainTextDescription">
                     Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
                 </p>
             </article>
         </div>
         
-        <div id="servicesRightCol">
+        <div class="servicesRightCol">
             <article>
-                <h2 id="subHeader"><i class="fal fa-flask-poison"></i> Bar <i class="fal fa-flask-poison"></i></h2>
-                <img src='images/Park-Bar-Small.png' alt='Bar' id="columnImage">
-                <p id="mainTextDescription">
+                <h2 class="subHeader"><i class="fal fa-flask-poison"></i> Bar <i class="fal fa-flask-poison"></i></h2>
+                <img src='images/Park-Bar-Small.png' alt='Bar' class="columnImage">
+                <p class="mainTextDescription">
                     Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
                 </p>
             </article>
@@ -115,12 +111,12 @@
         <!--The Ads section-->
 		<div id="adsLeft">
             <article>
-                <img src="images/ad.png" alt='Ad 1' id="adImage">
+                <img src="images/ad.png" alt='Ad 1' class="adImage">
             </article>
         </div>
         <div id='adsRight'>
             <article>
-                <img src="images/ad.png" alt='Ad 2' id="adImage">
+                <img src="images/ad.png" alt='Ad 2' class="adImage">
             </article>
 		</div>
 	</section>

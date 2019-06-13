@@ -1,71 +1,83 @@
-/*
-
-###How to apply classes in html:
-
-class='main': To wrap in curved border and pink background
-
-class='main_nav' : To turn links into purple buttons with red borders
-
-class='secondary_nav': To make links into purpe text
-
-class='row': To wrap a set of columns
-class='column': To make a column
-
-###Other styles applied directly to elements:
-
-body
-header
-h1
-h2
-footer
-img
-
-
-
-*/
-
+/*Set the webpage's background*/
 html {
     background: #ff7518;
 }
+
+/*Top navigation bar styling*/
 nav{
-                border-radius: 50px;
-                padding: 15px;
-                margin: 0px;
-                background: black;
-                text-align: center;
-                font-family:sans-serif;
-                border: solid;
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-                text-decoration: none;
-                color: #ff7518;
+    display: grid;            
+    grid-template-columns: auto auto auto auto auto;
+    border-radius: 50px;
+    padding: 15px;
+    background: black;
+    text-align: center;
+    font-family:sans-serif;
+    border: solid;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
+    color: #ff7518;
 }
 
 nav > a {
     text-decoration: none;
     font-family: creepster, cursive;
     color: #ff7518;
-    padding: 30px;
-}
-
-nav > a:hover {
-    text-decoration: none;
-    font-family: creepster, cursive;
-    color: #28641c;
-    padding: 30px;
 }
 
 .navMenuIcon {
     visibility: hidden;
 }
 
+/*Top navigation bar hove styling*/
+nav > a:hover {
+    text-decoration: none;
+    font-family: creepster, cursive;
+    color: #28641c;
+}
+
 nav > a:hover .navMenuIcon {
     visibility: visible;
+}
+
+/*Header styling*/
+header{
+    display: grid;
+    font-family:creepster, cursive;
+    font-size: 2.5em;
+    text-align: center;
+    background: black;
+    color: #ff7518;
+    padding: 30px;
+}
+
+header > h1{
+    margin-top: 1px;
+}
+
+/*Middle navigation bar styling*/
+#theOtherNavBar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-family: sans-serif;
+    text-align: center;
+    border: dashed;
+    background: #ff7518;
+    padding: 15px;
+}
+
+#theOtherNavBar > a{
+    text-decoration: none;
+    color: black;
+    font-family: creepster, cursive;
+    font-size: 25px;
+    padding-right: 40px;
 }
 
 .navBarIcon {
     visibility: hidden;
 }
 
+/*Middle navigation bar hover styling*/
 #theOtherNavBar > a:hover .navBarIcon {
     visibility: visible;
 }
@@ -74,94 +86,27 @@ nav > a:hover .navMenuIcon {
     text-decoration: none;
     font-family: creepster, cursive;
     color: #28641c;
-    padding: 30px;
 }
 
-header{
-    font-family:creepster, cursive;
-    font-size: 3em;
-    text-align: center;
-    background: black;
-    color: #ff7518;
-    padding: 30px;
+/*Main body block with images and text grid setup*/
+.bodyContainer {
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
 }
 
-h1{
-    margin-top: 1px;
-}
-
-#theOtherNavBar{
-    font-family: sans-serif;
-    text-align: center;
-    border: dashed;
-    background: #ff7518;
-    padding: 10px;
-}
-
-#theOtherNavBar > a{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: none;
-    color: black;
-    font-family: creepster, cursive;
-    font-size: 25px;
-    padding-right: 40px;
-}
-
-#leftColumn{
-    display: block;
+.leftColumn{
     background: black;
     margin: 0px;
-    width: 49%;
-    float:left;
-    height: 970px;
+    padding: 20px;
 }
 
-#attractionsLeftCol{
-    display: block;
+.rightColumn{
     background: black;
     margin: 0px;
-    width: 49%;
-    float:left;
-    height: 1850px;
+    padding: 20px;
 }
 
-.servicesLeftCol{
-    display: block;
-    background: black;
-    margin: 0px;
-    width: 49%;
-    float:left;
-    height: 650px;
-}
-
-#rightColumn{
-    display: block;
-    background: black;
-    margin: 0px;
-    width: 49%;
-    float:right;
-    height: 970px;
-}
-
-#attractionsRightCol{
-    display: block;
-    background: black;
-    margin: 0px;
-    width: 49%;
-    float:right;
-    height: 1850px;
-}
-
-.servicesRightCol{
-    display: block;
-    background: black;
-    margin: 0px;
-    width: 49%;
-    float:right;
-    height: 650px;
-}
-
+/*Main body text and image styling*/
 .subHeader {
     text-align: center;
     color: #ff7518;
@@ -186,11 +131,19 @@ h1{
     font-family: creepster, cursive;
 }
 
+/*Map section of the index page - grid setup*/
+.map-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+}
+
 #mainMap {
     display: block;
     padding-bottom: 30px;
 }
 
+/*Map section of the index page - styling*/
 #mapHeader {
     text-align: center;
     color: black;
@@ -215,11 +168,9 @@ h1{
     border-color: black;
 }
 
-.servicesText {
-    text-align: center;
-    color: black;
-    font-family: creepster, cursive;
-    font-size: 30px;
+/*Buy tickets container styling*/
+.getTicketsContainer {
+    display: grid;
 }
 
 #tickets {
@@ -239,49 +190,58 @@ h1{
     font-size: 30px;
 }
 
-#selectBlock {
-    padding-left: 35%;
-    padding-bottom: 20px;
+.selectBlockContainer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .ticketsSelect {
-    display: block;
-    position: relative;
     font-family: creepster, cursive;
     float: left;
     background: #ff7518;
     border-radius: 15px;
     font-size: 20px;
-    padding-left: 10px;
-    padding-right:10px;
+    width: 40%;
+    margin: auto;
 }
 
+/*Buy tickets hover styling*/
 .ticketsSelect:hover {
     border-color: #28641c;
     border-width: 4px;
     color: #28641c;
 }
 
+/*Buy tickets focus styling*/
 .ticketsSelect:focus {
     border-color: #28641c;
     border-width: 4px;
     color: #28641c;
 }
 
-#adsLeft {
-    display: block;
-    float: left;
-    width: 49%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+/*Styling of the subsections Other Services and Food in the services page*/
+.otherServicesContainer {
+    display: grid;
 }
 
-#adsRight {
-    display: block;
-    float: right;
-    width: 49%;
+.servicesText {
+    text-align: center;
+    color: black;
+    font-family: creepster, cursive;
+    font-size: 30px;
+}
+
+/*Ads section of the Services page styling*/
+.adContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.ad {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .adImage {
@@ -294,8 +254,7 @@ h1{
     width: 600px;
 }
 
+/*Footer styling*/
 #footer {
     text-align: center;
 }
-
-

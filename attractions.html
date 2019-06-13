@@ -17,7 +17,8 @@
 <!-- Visible document body -->
 <body>
     
-<section id="main">    
+<div>
+
  <!--Nav bar-->
     <nav>
             <a href="index.html"><i class="fab fa-fort-awesome navMenuIcon"></i> Home <i class="fab fa-fort-awesome navMenuIcon"></i></a>
@@ -41,67 +42,57 @@
     </div> 
 
 <!--The big central block with articles and images-->    
-    <section>
-        
-        <div id="attractionsLeftCol">
-            <article>
+    <div class="bodyContainer">
+        <!--Left column code-->
+        <div class="leftColumn">
                 <h2 class="subHeader"><i class="far fa-cloud-moon"></i> The Night Tour <i class="far fa-cloud-moon"></i></h2>
                 <img src='images/Park-Attractions-Gif.gif' alt='Horror GIF' class="columnImage">
                 <p class="mainTextDescription">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ex consectetur egestas tincidunt. Pellentesque at sodales ligula. Etiam dignissim interdum quam, eget feugiat tellus bibendum nec. In vitae leo fermentum, consequat est non, blandit felis. Etiam viverra lacus nec risus aliquet.
                 </p>
-            </article>
-            <article>
                 <h2 class="subHeader"><i class="far fa-bat"></i> The Ferris Wheel <i class="far fa-bat"></i></h2>
                 <img src='images/Park-Ferris-Wheel-Small.png' alt='Ferris Wheel' class="columnImage">
                 <p class="mainTextDescription">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ex consectetur egestas tincidunt. Pellentesque at sodales ligula. Etiam dignissim interdum quam, eget feugiat tellus bibendum nec. In vitae leo fermentum, consequat est non, blandit felis. Etiam viverra lacus nec risus aliquet.
                 </p>
-            </article>
-            <article>
                 <h2 class="subHeader"><i class="far fa-coffin"></i> The Magic Castle of Horrors <i class="far fa-coffin"></i></h2>
                 <img src='images/Park-Castle-Small.png' alt='Castle'  class="columnImage">
                 <p class="mainTextDescription">
 					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi at ipsum semper, ultrices urna quis, gravida purus. Proin laoreet mattis luctus. Donec mattis vel urna vel sodales. Vivamus mollis, libero ut ullamcorper rhoncus, eros libero congue nulla.
                 </p>
-            </article>
         </div>
-        
-        <div id='attractionsRightCol'>
-            <article>
+        <!--Div to account for the gap between the two columns-->
+        <div></div>
+        <!--Right column code-->
+        <div class="rightColumn">
                 <h2 class="subHeader"><i class="far fa-mask"></i> The Circus <i class="far fa-mask"></i></h2>
                 <img src='images/Park-Attractions-Gif2.gif' alt='Horror GIF' class="columnImage">
                 <p class="mainTextDescription">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ex consectetur egestas tincidunt. Pellentesque at sodales ligula. Etiam dignissim interdum quam, eget feugiat tellus bibendum nec. In vitae leo fermentum, consequat est non, blandit felis. Etiam viverra lacus nec risus aliquet.
                 </p>
-            </article>
-            <article>
                 <h2 class="subHeader"><i class="far fa-spider-web"></i> The Shitty Rollercoaster <i class="far fa-spider-web"></i></h2>
                 <img src='images/Park-Roller-Coaster-Small.png' alt='RollerCoaster' class="columnImage">
                 <p class="mainTextDescription">
 					Cras lacinia dolor risus, sit amet congue augue ullamcorper ac. Nulla facilisi. Curabitur auctor elit vitae velit commodo viverra. Nam porta elit eu diam rutrum gravida. Sed elementum consequat ligula, sit amet hendrerit arcu. Orci varius natoque penatibus et magnis dis parturient.
                 </p>
-            </article>
-            <article>
                 <h2 class="subHeader"><i class="far fa-ghost"></i> The Slowest Carrousel <i class="far fa-ghost"></i></h2>
                 <img src='images/Park-Carrousel-Small.png' alt='Carrousel' class="columnImage">
                 <p class="mainTextDescription">
 					Donec varius leo ante, sed varius nulla venenatis vel. Integer imperdiet vehicula placerat. Maecenas ornare luctus tellus, non efficitur libero pellentesque quis. Phasellus volutpat placerat mauris nec sagittis. Vestibulum lacinia purus commodo metus porta placerat. Duis quis mollis risus. Vestibulum ante ipsum.
                 </p>
-            </article>
         </div>
-    </section>
+    </div>
   
     
 <!--The map section-->    
-    <section>
+    <div class="map-container">
         <div id="mainMap">
         <h1 id="mapHeader"><i class="far fa-skull-crossbones"></i> Map of the Park <i class="far fa-skull-crossbones"></i></h1>
         <img src="images/Park-Map2-Small.jpg" alt='Detailed map' id="mapImage">
         </div>
-    </section>
+    </div>
 
-</section>    
+</div>    
     
 <!--Footer-->    
     <footer id="footer">

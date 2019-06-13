@@ -46,8 +46,11 @@ header{
     font-size: 2.5em;
     text-align: center;
     background: black;
-    color: #ff7518;
+    color: #995c00;
     padding: 30px;
+     background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: right
 }
 
 header > h1{

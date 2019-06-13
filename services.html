@@ -17,7 +17,7 @@
 <!-- Visible document body -->
 <body>
     
-<section id="main">    
+<div>    
  <!--Nav bar-->
     <nav>
             <a href="index.html"><i class="fab fa-fort-awesome navMenuIcon"></i> Home <i class="fab fa-fort-awesome navMenuIcon"></i></a>
@@ -40,88 +40,82 @@
             <a href="index.html#mapImage"><i class="far fa-map-signs navBarIcon"></i> Map</a>
     </div>  
 
-<!--The big central block with articles and images-->    
-    <section>
-        <!--The Buy Tickets block-->
+<!--Get tickets block-->    
+    <div class="getTicketsContainer">
 		<div id="tickets">
 			<h2 id="ticketsText"> Buy Tickets </h2>
-            <div id="selectBlock">
+            <div class="selectBlockContainer">
 			<select class="ticketsSelect"><option value="tickets" class="ticketsOption">Tickets</option></select>
 			<select class="ticketsSelect"><option value="promo1" class="ticketsOption">PROMO 1</option></select>
 			<select class="ticketsSelect"><option value="promo2" class="ticketsOption">PROMO 2</option></select>
 			<select class="ticketsSelect"><option value="seasonPass" class="ticketsOption">SEASON PASS</option></select>
             </div>
 		</div>
-	</section>
-	<section>
+	</div>
+<!--The big central block with text and images-->
+	<div class="otherServicesContainer">
         <!--The Other Services block-->
 		<div class="otherServices">
 			<h2 class="servicesText"><i class="far fa-book-dead"></i> Other Services <i class="far fa-book-dead"></i></h2>
         </div>
-    </section>
-    <section>    
-        <div class="servicesLeftCol">
-            <article>
+    </div>
+    <div class="bodyContainer">
+        <!--Left column code-->
+        <div class="leftColumn">
                 <h2 class="subHeader"><i class="fal fa-hotel"></i> Hotel <i class="fal fa-hotel"></i></h2>
                 <img src='images/Park-Hotel-Small.png' alt='Hotel' class="columnImage">
                 <p class="mainTextDescription">
                     Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
                 </p>
-            </article>
         </div>
-        
-        <div class="servicesRightCol">
-            <article>
+        <!--Div to account for the gap between the two columns-->
+        <div></div>
+        <!--Right column code-->
+        <div class="rightColumn">
                 <h2 class="subHeader"><i class="fal fa-broom"></i> Season Pass <i class="fal fa-broom"></i></h2>
                 <img src='images/Park-Season-Pass-Small.png' alt='Season Pass' class="columnImage">
                 <p class="mainTextDescription">
                     Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
                 </p>
-            </article>
         </div>
-    </section>
-	<section>
+    </div>
+	<div class="otherServicesContainer">
         <!--The Food block-->
 		<div class="otherServices">
    			<h2 class="servicesText"><i class="far fa-hat-chef"></i> Food <i class="far fa-hat-chef"></i></h2>
         </div>
-    </section>
-    <section>    
-        <div class="servicesLeftCol">
-            <article>
+    </div>
+    <div class="bodyContainer"> 
+        <!--Left column code-->
+        <div class="leftColumn">
                 <h2 class="subHeader"><i class="far fa-cauldron"></i> Restaurant <i class="far fa-cauldron"></i></h2>
                 <img src='images/Park-Restaurant-Small.png' alt='Restaurant' class="columnImage">
                 <p class="mainTextDescription">
                     Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
                 </p>
-            </article>
         </div>
-        
-        <div class="servicesRightCol">
-            <article>
+        <!--Div to account for the gap between the two columns-->
+        <div></div>
+        <!--Right column code-->
+        <div class="rightColumn">
                 <h2 class="subHeader"><i class="fal fa-flask-poison"></i> Bar <i class="fal fa-flask-poison"></i></h2>
                 <img src='images/Park-Bar-Small.png' alt='Bar' class="columnImage">
                 <p class="mainTextDescription">
                     Nullam non venenatis magna, eget accumsan ante. Phasellus at nisl nec tortor porta iaculis in non sem. Integer vel odio elementum, porttitor elit quis, aliquet odio. Nulla elementum maximus diam, non fermentum sem feugiat in. Donec sit amet molestie leo. Cras varius.
                 </p>
-            </article>
         </div>
-    </section>
-	<section>
-        <!--The Ads section-->
-		<div id="adsLeft">
-            <article>
+    </div>
+    <!--The Ads section-->
+	<div class="adContainer">
+		<div class="ad">
                 <img src="images/ad.png" alt='Ad 1' class="adImage">
-            </article>
         </div>
-        <div id='adsRight'>
-            <article>
+        <div class="ad">
                 <img src="images/ad.png" alt='Ad 2' class="adImage">
-            </article>
 		</div>
-	</section>
+	</div>
     
-    </section>
+    </div>
 
 <!--Footer-->    
     <footer id="footer">

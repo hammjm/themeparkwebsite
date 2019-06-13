@@ -40,7 +40,7 @@ nav > a {
     visibility: hidden;
 }
 
-/*Top navigation bar hove styling*/
+/*Top navigation bar hover styling*/
 nav > a:hover {
     text-decoration: none;
     font-family: creepster, cursive;
@@ -49,6 +49,61 @@ nav > a:hover {
 
 nav > a:hover .navMenuIcon {
     visibility: visible;
+}
+
+/*Top banner styling*/
+.topBanner {
+    font-family: creepster, cursive;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerText {
+    margin: 0px;
+    font-size: 20px;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 5s linear infinite;
+    -webkit-animation: scroll-left 5s linear infinite;
+    animation: scroll-left 20s linear infinite;
+}
+
+/*Top banner animation*/
+/*Compatibility with Firefox*/
+@moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/*Compatibility with some versions of Safari*/
+@webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+/*Compatibility with Chrome and most recent versions*/
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%); /*Fix a browser compatibility bug*/
+        -webkit-transform: translateX(100%); /*Fix a browser compatibility bug*/
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%); /*Fix a browser compatibility bug*/
+        -webkit-transform: translateX(-100%); /*Fix a browser compatibility bug*/
+        transform: translateX(-100%);
+    }
 }
 
 /*Header styling*/
@@ -101,6 +156,8 @@ header > h1{
     text-decoration: none;
     font-family: creepster, cursive;
     color: #28641c;
+    transform: scale(1.5);
+    transition: all 0.3s;
 }
 
 /*Main body block with images and text grid setup*/

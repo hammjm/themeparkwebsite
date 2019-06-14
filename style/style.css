@@ -70,27 +70,6 @@ nav > a:hover .navMenuIcon {
 }
 
 /*Top banner animation*/
-/*Compatibility with Firefox*/
-@moz-keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%);
-    }
-}
-
-/*Compatibility with some versions of Safari*/
-@webkit-keyframes scroll-left {
-    0% {
-        -webkit-transform: translateX(100%);
-    }
-    100% {
-        -webkit-transform: translateX(-100%);
-    }
-}
-
-/*Compatibility with Chrome and most recent versions*/
 @keyframes scroll-left {
     0% {
         -moz-transform: translateX(100%); /*Fix a browser compatibility bug*/

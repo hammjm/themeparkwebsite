@@ -49,6 +49,12 @@ nav > a:hover .navMenuIcon {
     visibility: visible;
 }
 
+/*Make images fit when screen resizes*/
+img{
+    max-width:100%;
+    height:auto
+}
+
 /*Top banner styling*/
 .topBanner {
     font-family: creepster, cursive;

@@ -1,7 +1,6 @@
 /*Set the webpage's background*/
 html {
     background: #ff7518;
-    /*width: 75%;*/
     margin: auto;
     
 }
@@ -21,9 +20,7 @@ nav{
     padding: 15px;
     background: black;
     text-align: center;
-    font-family:sans-serif;
     border: solid;
-   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
     text-decoration: none;
     color: #ff7518;
     width:96%;
@@ -128,7 +125,6 @@ header > h1{
 #theOtherNavBar{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    font-family: sans-serif;
     text-align: center;
     border: dashed;
     background: #ff7518;

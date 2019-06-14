@@ -5,6 +5,7 @@ html {
     
 }
 
+/*Set page border and shadow*/
 .page{
     border: solid 2px;
     border-radius: 20px;
@@ -168,7 +169,23 @@ header > h1{
     padding: 20px;
 }
 
+.leftColumnAttractions{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background: black;
+    margin: 0px;
+    padding: 20px;
+}
+
 .rightColumn{
+    background: black;
+    margin: 0px;
+    padding: 20px;
+}
+
+.rightColumnAttractions{
+    display: grid;
+    grid-template-rows: auto auto auto;
     background: black;
     margin: 0px;
     padding: 20px;

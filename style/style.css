@@ -46,11 +46,17 @@ nav > a:hover .navMenuIcon {
     visibility: visible;
 }
 
+
+
+
 /*Make images fit when screen resizes*/
 img{
     max-width:100%;
     height:auto
 }
+
+
+
 
 /*Top banner styling*/
 .topBanner {
@@ -86,6 +92,9 @@ img{
     }
 }
 
+
+
+
 /*Header styling*/
 header{
     display: grid;
@@ -110,6 +119,8 @@ header > h1{
     visibility: hidden;
 }
 
+
+
 /*Middle navigation bar hover styling*/
 #theOtherNavBar > a:hover .navBarIcon {
     visibility: visible;
@@ -122,6 +133,11 @@ header > h1{
     transform: scale(1.5);
     transition: all 0.3s;
 }
+
+
+
+
+
 
 /*Main body block with images and text grid setup*/
 .bodyContainer {
@@ -183,6 +199,9 @@ header > h1{
     font-family: creepster, cursive;
 }
 
+
+
+
 /*Map section of the index page - grid setup*/
 .map-container {
     display: grid;
@@ -219,6 +238,9 @@ header > h1{
     border-radius: 15px;
     border-color: black;
 }
+
+
+
 
 /*Buy tickets container styling*/
 .getTicketsContainer {
@@ -311,26 +333,9 @@ header > h1{
     text-align: center;
 }
 
-/*
-@media only screen and (max-width: 1000px){
-    
-    .bodyContainer {
-     display: grid;
-    grid-template-columns: 100% 0% 100%;
-}
-    
-    .leftColumn{
-       float:left
-    } 
-    
-    .rightColumn{
-       
-        float:left
-    }
-}*/
 
 
-
+/*MOBILE AND DESKTOP VIEW */
 
 /*Mobile view*/
 @media only screen and (max-width: 700px) {

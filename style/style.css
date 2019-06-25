@@ -31,7 +31,9 @@ nav{
 nav > a {
     text-decoration: none;
     font-family: creepster, cursive;
+    font-size: 2em;
     color: #ff7518;
+    
 }
 
 
@@ -355,6 +357,10 @@ header > h1{
         float:left;
         border-radius: 0px;
         padding:0px;
+    }
+    
+    nav > a{
+        font-size: 2em;
     }
     
 #theOtherNavBar{

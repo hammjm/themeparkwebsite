@@ -328,3 +328,65 @@ header > h1{
 #footer {
     text-align: center;
 }
+
+/*
+@media only screen and (max-width: 1000px){
+    
+    .bodyContainer {
+     display: grid;
+    grid-template-columns: 100% 0% 100%;
+}
+    
+    .leftColumn{
+       float:left
+    } 
+    
+    .rightColumn{
+       
+        float:left
+    }
+}*/
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width:100%;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .bodyContainer {
+    display: grid;
+    grid-template-columns: 100%;
+}
+    
+    .leftColumn{
+       float:left
+       width:99%
+    } 
+    
+    .rightColumn{
+       
+        float:left
+         width:99%
+    }
+}
+@media only screen and (min-width: 701px) {
+
+    .leftColumn{
+       float:left;
+     
+    } 
+    
+    .rightColumn{
+       
+        float:left
+           
+    }
+    
+    .gap{
+         float:left
+            width:1%
+    }
+}

@@ -95,7 +95,7 @@ header{
     background: black;
     color: #cb2901;
     padding: 30px;
-     background-image: url("../images/background.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-position: right;
     
@@ -334,12 +334,15 @@ header > h1{
 
 /*Mobile view*/
 @media only screen and (max-width: 700px) {
+  
     .page{
         border-radius: 0px;
     }
     
 
-    
+    header{
+        background-image: none;
+    }
     nav{
         display: grid;
         grid-template-columns: 100%;

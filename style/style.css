@@ -2,41 +2,110 @@
 html {
     background: #ff7518;
     margin: auto;
-    
 }
 
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+    .page {
+        border: none;
+    }
+}
 /*Set page border and shadow*/
+@media only screen and (min-width: 601px){
 .page{
     border: solid 2px;
     border-radius: 20px;
     box-shadow: 0px 0px 56px 9px rgba(0,0,0,0.75);
-    
+}
+}
+
+/*Top nav bar mobile*/
+@media only screen and (max-width: 600px){
+    #topNavBar {
+        display: none;
+    }
+    #mobileNavBar a:not(:first-child) {display: none;}
+    #mobileNavBar a.mobileMenuIcon {
+        float: right;
+        display: block;
+    }
+    #mobileNavBar.responsive {position: relative;}
+    #mobileNavBar.responsive a.mobileMenuIcon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #mobileNavBar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .mobileLogo {
+        color: #ff7518;
+        font-size: 20px;
+    }
+/* Add a black background color to the top navigation */
+    #mobileNavBar {
+        background-color: #000000;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+/* Style the links inside the navigation bar */
+    #mobileNavBar a {
+        font-family: creepster, cursive;
+        float: left;
+        display: block;
+        color: #ff7518;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    /* Change the color of links on hover */
+    #mobileNavBar a:hover {
+        background-color: #ff7518;
+        color: #000000;
+    }
 }
 
 /*Top navigation bar styling*/
-nav{
-    display: grid;            
-    grid-template-columns: auto auto auto auto auto;
-    border-radius: 50px;
-    padding: 15px;
-    background: black;
-    text-align: center;
-    border: solid;
-    text-decoration: none;
-    color: #ff7518;
-    width:96%;
-    margin:auto
-}
-
-nav > a {
-    text-decoration: none;
-    font-family: creepster, cursive;
-    font-size: 2em;
-    color: #ff7518;
+@media only screen and (min-width: 601px){
+    #mobileNavBar {
+        display: none;
+    }
     
-}
+    nav {
+        display: grid;            
+        grid-template-columns: auto auto auto auto auto;
+        border-radius: 50px;
+        padding: 15px;
+        background: black;
+        text-align: center;
+        border: solid;
+        text-decoration: none;
+        color: #ff7518;
+        width: 96%;
+        margin:auto;
+    }
 
+    nav > a {
+        text-decoration: none;
+        font-family: creepster, cursive;
+        color: #ff7518;
+    }
 
+    .mobileLogo {
+        display: none;
+    }
+    
+    .mobileMenuIcon {
+        display: none;
+    }
+
+    .navMenuIcon {
+        visibility: hidden;
+    }
+    
 /*Top navigation bar hover styling*/
 nav > a:hover {
     text-decoration: none;
@@ -47,18 +116,22 @@ nav > a:hover {
 nav > a:hover .navMenuIcon {
     visibility: visible;
 }
-
-
-
-
-/*Make images fit when screen resizes*/
-img{
-    max-width:100%;
-    height:auto
 }
 
-
-
+/*Mobile top banner styling*/
+@media only screen and (max-width: 600px){
+    .bannerText {
+        margin: 0px;
+        font-size: 17px;
+        text-align: center;
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: scroll-left 5s linear infinite;
+        -webkit-animation: scroll-left 5s linear infinite;
+        animation: scroll-left 20s linear infinite;
+    }
+}
 
 /*Top banner styling*/
 .topBanner {
@@ -68,6 +141,7 @@ img{
     position: relative;
 }
 
+@media only screen and (min-width:601px){
 .bannerText {
     margin: 0px;
     font-size: 20px;
@@ -78,6 +152,7 @@ img{
     -moz-animation: scroll-left 5s linear infinite;
     -webkit-animation: scroll-left 5s linear infinite;
     animation: scroll-left 20s linear infinite;
+}
 }
 
 /*Top banner animation*/
@@ -94,34 +169,79 @@ img{
     }
 }
 
-
-
-
 /*Header styling*/
+@media only screen and (max-width:600px){
+    header {
+        display: block;
+        font-family: creepster, cursive;
+        font-size: 3.2vh;
+        text-align: center;
+        background: black;
+        color: #ff7518;
+        padding: 30px;
+        background-image: url("../images/background.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+        -webkit-text-stroke: 1px black;
+    }
+    .headerIcon {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:601px){
 header{
-    display: grid;
+    display: block;
     font-family:creepster, cursive;
     font-size: 2.5em;
     text-align: center;
     background: black;
-    color: #cb2901;
+    color: #ff7518;
     padding: 30px;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-position: right;
-    
 }
 
 header > h1{
     margin-top: 1px;
 }
+}
 
+/*Middle navigation bar styling*/
 
+#theOtherNavBar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    border: dashed;
+    background: #ff7518;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 600px){
+    #theOtherNavBar > a{
+        text-decoration: none;
+        color: black;
+        font-family: creepster, cursive;
+        font-size: 15px;
+}
+}
+
+@media only screen and (min-width: 601px){
+#theOtherNavBar > a{
+    text-decoration: none;
+    color: black;
+    font-family: creepster, cursive;
+    font-size: 25px;
+    padding-right: 40px;
+}
+}
+    
 .navBarIcon {
     visibility: hidden;
 }
-
-
 
 /*Middle navigation bar hover styling*/
 #theOtherNavBar > a:hover .navBarIcon {
@@ -136,19 +256,13 @@ header > h1{
     transition: all 0.3s;
 }
 
-
-
-
-
-
 /*Main body block with images and text grid setup*/
+@media only screen and (min-width: 601px){
 .bodyContainer {
     display: grid;
     grid-template-columns: 49% 2% 49%;
 }
-
-
-.leftColumn{
+    .leftColumn{
     background: black;
     margin: 0px;
     padding: 20px;
@@ -175,8 +289,66 @@ header > h1{
     margin: 0px;
     padding: 20px;
 }
+}
 
 /*Main body text and image styling*/
+@media only screen and (max-width: 600px){
+    /*Main body text and image styling*/
+    .leftColumn{
+        background: black;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .leftColumnAttractions{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        background: black;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .rightColumn{
+        background: black;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .rightColumnAttractions{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        background: black;
+        margin: 0px;
+        padding: 20px;
+    }
+    
+    .subHeader {
+        text-align: center;
+        color: #ff7518;
+        font-family: creepster, cursive;
+        font-size: 25px;
+    }
+
+    .columnImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 15px;
+        border-color: #ff7518;
+        width: 80%;
+    }
+
+    .mainTextDescription {
+        text-align: center;
+        color: #ff7518;
+        font-size: 20px;
+        font-family: creepster, cursive;
+    }
+}
+
+@media only screen and (min-width: 601px){
 .subHeader {
     text-align: center;
     color: #ff7518;
@@ -200,55 +372,102 @@ header > h1{
     font-size: 25px;
     font-family: creepster, cursive;
 }
-
-
-
+}
 
 /*Map section of the index page - grid setup*/
-.map-container {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 20px;
+
+@media only screen and (max-width: 600px){
+    #mainMap {
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    /*Map section of the index page - styling*/
+    #mapHeader {
+        text-align: center;
+        color: black;
+        font-family: creepster, cursive;
+        font-size: 35px;
+    }
+
+    #mapText {
+        text-align: center;
+        color: black;
+        font-family: creepster, cursive;
+        font-size: 25px;
+    }
+
+    #mapImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 15px;
+        border-color: black;
+        width: 80%;
+    }
 }
 
-#mainMap {
-    display: block;
-    padding-bottom: 30px;
+@media only screen and (min-width: 601px){
+    .map-container {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 20px;
+    }
+    
+    #mainMap {
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    /*Map section of the index page - styling*/
+    #mapHeader {
+        text-align: center;
+        color: black;
+        font-family: creepster, cursive;
+        font-size: 45px;
+    }
+
+    #mapText {
+        text-align: center;
+        color: black;
+        font-family: creepster, cursive;
+        font-size: 30px;
+    }
+
+    #mapImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 15px;
+        border-color: black;
+    }
 }
-
-/*Map section of the index page - styling*/
-#mapHeader {
-    text-align: center;
-    color: black;
-    font-family: creepster, cursive;
-    font-size: 45px;
-}
-
-#mapText {
-    text-align: center;
-    color: black;
-    font-family: creepster, cursive;
-    font-size: 30px;
-}
-
-#mapImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 15px;
-    border-color: black;
-}
-
-
-
-
+    
 /*Buy tickets container styling*/
 .getTicketsContainer {
     display: grid;
 }
 
+@media only screen and (max-width: 600px){
+    #tickets {
+        display: block;
+        background: black;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    #ticketsText {
+        text-align: center;
+        color: #ff7518;
+        font-family: creepster, cursive;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 601px){
 #tickets {
     display: block;
     background: black;
@@ -265,20 +484,40 @@ header > h1{
     font-family: creepster, cursive;
     font-size: 30px;
 }
-
-.selectBlockContainer {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
 }
 
-.ticketsSelect {
-    font-family: creepster, cursive;
-    float: left;
-    background: #ff7518;
-    border-radius: 15px;
-    font-size: 20px;
-    width: 40%;
-    margin: auto;
+
+
+@media only screen and (max-width: 600px){
+    .selectBlockContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .ticketsSelect {
+        font-family: creepster, cursive;
+        float: left;
+        background: #ff7518;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 601px){
+    .selectBlockContainer {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .ticketsSelect {
+        font-family: creepster, cursive;
+        float: left;
+        background: #ff7518;
+        border-radius: 15px;
+        font-size: 20px;
+        width: 40%;
+        margin: auto;
+    }
 }
 
 /*Buy tickets hover styling*/
@@ -308,132 +547,54 @@ header > h1{
 }
 
 /*Ads section of the Services page styling*/
-.adContainer {
-    display: grid;
-    grid-template-columns: auto auto;
+@media only screen and (max-width: 600px){
+    .adContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .ad {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .adImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 4px;
+        width: 150px;
+    }
 }
 
-.ad {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+@media only screen and (min-width: 601px){
+    .adContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 
-.adImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 4px;
-    width: 600px;
-}
+    .ad {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
+    .adImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 4px;
+        width: 600px;
+    }
+}
 /*Footer styling*/
 #footer {
     text-align: center;
-}
-
-
-
-/*MOBILE AND DESKTOP VIEW */
-
-/*Mobile view*/
-@media only screen and (max-width: 700px) {
-  
-    .page{
-        border-radius: 0px;
-    }
-    
-
-    header{
-        background-image: none;
-    }
-    nav{
-        display: grid;
-        grid-template-columns: 100%;
-        width: 99%;
-        float:left;
-        border-radius: 0px;
-        padding:0px;
-    }
-    
-    nav > a{
-        font-size: 2em;
-    }
-    
-#theOtherNavBar{
-    display: grid;
-    grid-template-columns: 100%;
-    text-align: center;
-    border: dashed;
-    background: #ff7518;
-    padding: 15px;
-}
-
-#theOtherNavBar > a{
-    text-decoration: none;
-    color: black;
-    font-family: creepster, cursive;
-    padding-right: 40px;
-    width:100%;
-    float: left;
-    font-size: 2em;
-}
-    .bodyContainer {
-    display: grid;
-    grid-template-columns: 100%;
-}
-    
-    .leftColumn{
-       float:left;
-       width:99%
-    } 
-    
-    .rightColumn{
-       
-        float:left;
-         width:99%
-    }
-}
-
-/*Desktop view*/
-@media only screen and (min-width: 701px) {
-
-    /*Middle navigation bar styling*/
-#theOtherNavBar{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    text-align: center;
-    border: dashed;
-    background: #ff7518;
-    padding: 15px;
-}
-
-#theOtherNavBar > a{
-    text-decoration: none;
-    color: black;
-    font-family: creepster, cursive;
-    font-size: 2em;
-    padding-right: 40px;
-}
-
-    
-    
-    .leftColumn{
-       float:left;
-     
-    } 
-    
-    .rightColumn{
-       
-        float:left
-           
-    }
-    
-    .gap{
-         float:left
-            width:1%
-    }
 }

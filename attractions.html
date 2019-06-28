@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="'Theme Park', Attractions">
   <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="js/hamburgerMenu.js"></script>
 </head>
 
 <!-- Visible document body -->
@@ -19,13 +20,30 @@
     
 <div class='page'>
 
+<audio autoplay>
+    <source src="audio/evilLaugh.mp3">
+</audio>    
+    
+ <!--Mobile Nav bar-->
+    <nav class="navBar" id="mobileNavBar">
+        <a href="index.html"><i class="far fa-jack-o-lantern mobileLogo"></i></a>
+        <a href="index.html"><i class="fab fa-fort-awesome navMenuIcon"></i> Home <i class="fab fa-fort-awesome navMenuIcon"></i></a>
+        <a href="services.html"><i class="far fa-ticket-alt navMenuIcon"></i> Tickets <i class="far fa-ticket-alt navMenuIcon"></i></a>            
+        <a href="attractions.html"><i class="fal fa-alicorn navMenuIcon"></i> Attractions <i class="fal fa-alicorn navMenuIcon"></i></a>
+        <a href="services.html"><i class="far fa-concierge-bell navMenuIcon"></i> Services <i class="far fa-concierge-bell navMenuIcon"></i></a>
+        <a href="index.html#mapImage"><i class="far fa-map-signs navMenuIcon"></i> Map <i class="far fa-map-signs navMenuIcon"></i></a>
+        <a href="javascript:void(0);" class="mobileMenuIcon" onclick="menuFunction()">
+        <i class="far fa-bars"></i>
+        </a>  
+    </nav> 
+    
  <!--Nav bar-->
-    <nav>
-            <a href="index.html"><i class="fab fa-fort-awesome navMenuIcon"></i> Home <i class="fab fa-fort-awesome navMenuIcon"></i></a>
-            <a href="services.html"><i class="far fa-ticket-alt navMenuIcon"></i> Tickets <i class="far fa-ticket-alt navMenuIcon"></i></a>
-            <a href="attractions.html"><i class="fal fa-alicorn navMenuIcon"></i> Attractions <i class="fal fa-alicorn navMenuIcon"></i></a>
-            <a href="services.html"><i class="far fa-concierge-bell navMenuIcon"></i> Services <i class="far fa-concierge-bell navMenuIcon"></i></a>
-            <a href="index.html#mapImage"><i class="far fa-map-signs navMenuIcon"></i> Map <i class="far fa-map-signs navMenuIcon"></i></a>        
+    <nav class="navBar" id="topNavBar">
+        <a href="index.html"><i class="fab fa-fort-awesome navMenuIcon"></i> Home <i class="fab fa-fort-awesome navMenuIcon"></i></a>
+        <a href="services.html"><i class="far fa-ticket-alt navMenuIcon"></i> Tickets <i class="far fa-ticket-alt navMenuIcon"></i></a>            
+        <a href="attractions.html"><i class="fal fa-alicorn navMenuIcon"></i> Attractions <i class="fal fa-alicorn navMenuIcon"></i></a>
+        <a href="services.html"><i class="far fa-concierge-bell navMenuIcon"></i> Services <i class="far fa-concierge-bell navMenuIcon"></i></a>
+        <a href="#index.html#mapImage"><i class="far fa-map-signs navMenuIcon"></i> Map <i class="far fa-map-signs navMenuIcon"></i></a>
     </nav>    
 
 <!--Scrolling text-->
@@ -35,13 +53,13 @@
 	
 <!--The big header-->
     <header>
-        <p><i class="fal fa-scarecrow"></i> Attractions <i class="fal fa-scarecrow"></i></p>
+        <h1><i class="fal fa-scarecrow headerIcon"></i> Attractions <i class="fal fa-scarecrow headerIcon"></i></h1>
     </header>
     
     <!--The black nav bar/button bar-->
     <div id="theOtherNavBar">
             <a href="services.html"><i class="far fa-ticket-alt navBarIcon"></i> Get Tickets</a>
-            <a href="attractions.html"><i class="fal fa-alicorn navBarIcon"></i> Attractions</a>
+            <a href="attractions.html"><i class="fal fa-alicorn navBarIcon audioPlay"></i> Attractions</a>
             <a href="services.html"><i class="far fa-concierge-bell navBarIcon"></i> Services</a>
             <a href="index.html#mapImage"><i class="far fa-map-signs navBarIcon"></i> Map</a>
     </div> 

@@ -1,32 +1,119 @@
+
+/*######GENERAL RULES#################*/
 /*Set the webpage's background*/
+
 html {
     background: #ff7518;
     margin: auto;
 }
 
-/*Mobile*/
+
+
+/*Top banner styling*/
+.topBanner {
+    font-family: creepster, cursive;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*Top banner animation*/
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%); /*Fix a browser compatibility bug*/
+        -webkit-transform: translateX(100%); /*Fix a browser compatibility bug*/
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%); /*Fix a browser compatibility bug*/
+        -webkit-transform: translateX(-100%); /*Fix a browser compatibility bug*/
+        transform: translateX(-100%);
+    }
+}
+
+
+/*Middle navigation bar styling*/
+
+#theOtherNavBar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    border: dashed;
+    background: #ff7518;
+    padding: 15px;
+}
+
+ 
+.navBarIcon {
+    visibility: hidden;
+}
+
+/*Middle navigation bar hover styling*/
+#theOtherNavBar > a:hover .navBarIcon {
+    visibility: visible;
+}
+
+#theOtherNavBar > a:hover {
+    text-decoration: none;
+    font-family: creepster, cursive;
+    color: #28641c;
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+
+    
+/*Buy tickets container styling*/
+.getTicketsContainer {
+    display: grid;
+}
+
+
+/*Buy tickets hover styling*/
+.ticketsSelect:hover {
+    border-color: #28641c;
+    border-width: 4px;
+    color: #28641c;
+}
+
+/*Buy tickets focus styling*/
+.ticketsSelect:focus {
+    border-color: #28641c;
+    border-width: 4px;
+    color: #28641c;
+}
+
+/*Styling of the subsections Other Services and Food in the services page*/
+.otherServicesContainer {
+    display: grid;
+}
+
+.servicesText {
+    text-align: center;
+    color: black;
+    font-family: creepster, cursive;
+    font-size: 30px;
+}
+
+
+/*Footer styling*/
+#footer {
+    text-align: center;
+}
+
+/*########END GENERAL RULES#######################*/
+
+
+
+
+
+/*#############MOBILE STYLING####################*/
 @media only screen and (max-width: 600px) {
     .page {
         border: none;
     }
-}
-/*Set page border and shadow*/
-@media only screen and (min-width: 601px){
-.page{
-    border: solid 2px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 56px 9px rgba(0,0,0,0.75);
-    
-}
-    /*Make images fit when screen resizes*/
-img{
-    max-width:100%;
-    height:auto
-}
-}
-
+   
 /*Top nav bar mobile*/
-@media only screen and (max-width: 600px){
     #topNavBar {
         display: none;
     }
@@ -72,60 +159,8 @@ img{
         background-color: #ff7518;
         color: #000000;
     }
-}
-
-/*Top navigation bar styling*/
-@media only screen and (min-width: 601px){
-    #mobileNavBar {
-        display: none;
-    }
     
-    nav {
-        display: grid;            
-        grid-template-columns: auto auto auto auto auto;
-        border-radius: 50px;
-        padding: 15px;
-        background: black;
-        text-align: center;
-        border: solid;
-        text-decoration: none;
-        color: #ff7518;
-        width: 96%;
-        margin:auto;
-    }
-
-    nav > a {
-        text-decoration: none;
-        font-family: creepster, cursive;
-        color: #ff7518;
-    }
-
-    .mobileLogo {
-        display: none;
-    }
-    
-    .mobileMenuIcon {
-        display: none;
-    }
-
-    .navMenuIcon {
-        visibility: hidden;
-    }
-    
-/*Top navigation bar hover styling*/
-nav > a:hover {
-    text-decoration: none;
-    font-family: creepster, cursive;
-    color: #28641c;
-}
-
-nav > a:hover .navMenuIcon {
-    visibility: visible;
-}
-}
-
 /*Mobile top banner styling*/
-@media only screen and (max-width: 600px){
     .bannerText {
         margin: 0px;
         font-size: 17px;
@@ -137,168 +172,15 @@ nav > a:hover .navMenuIcon {
         -webkit-animation: scroll-left 5s linear infinite;
         animation: scroll-left 20s linear infinite;
     }
-}
+    
 
-/*Top banner styling*/
-.topBanner {
-    font-family: creepster, cursive;
-    padding: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-@media only screen and (min-width:601px){
-.bannerText {
-    margin: 0px;
-    font-size: 20px;
-    text-align: center;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: scroll-left 5s linear infinite;
-    -webkit-animation: scroll-left 5s linear infinite;
-    animation: scroll-left 20s linear infinite;
-}
-}
-
-/*Top banner animation*/
-@keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%); /*Fix a browser compatibility bug*/
-        -webkit-transform: translateX(100%); /*Fix a browser compatibility bug*/
-        transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%); /*Fix a browser compatibility bug*/
-        -webkit-transform: translateX(-100%); /*Fix a browser compatibility bug*/
-        transform: translateX(-100%);
-    }
-}
-
-/*Header styling*/
-@media only screen and (max-width:600px){
-    header {
-        display: block;
-        font-family: creepster, cursive;
-        font-size: 3.2vh;
-        text-align: center;
-        background: black;
-        color: #ff7518;
-        padding: 30px;
-        background-image: url("../images/background.jpg");
-        background-repeat: no-repeat;
-        background-position: right;
-        -webkit-text-stroke: 1px black;
-    }
-    .headerIcon {
-        display: none;
-    }
-}
-
-
-@media only screen and (min-width:601px){
-header{
-    display: block;
-    font-family:creepster, cursive;
-    font-size: 2.5em;
-    text-align: center;
-    background: black;
-    color: #ff7518;
-    padding: 30px;
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-header > h1{
-    margin-top: 1px;
-}
-}
-
-/*Middle navigation bar styling*/
-
-#theOtherNavBar{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    text-align: center;
-    border: dashed;
-    background: #ff7518;
-    padding: 15px;
-}
-
-@media only screen and (max-width: 600px){
     #theOtherNavBar > a{
         text-decoration: none;
         color: black;
         font-family: creepster, cursive;
         font-size: 15px;
 }
-}
 
-@media only screen and (min-width: 601px){
-#theOtherNavBar > a{
-    text-decoration: none;
-    color: black;
-    font-family: creepster, cursive;
-    font-size: 25px;
-    padding-right: 40px;
-}
-}
-    
-.navBarIcon {
-    visibility: hidden;
-}
-
-/*Middle navigation bar hover styling*/
-#theOtherNavBar > a:hover .navBarIcon {
-    visibility: visible;
-}
-
-#theOtherNavBar > a:hover {
-    text-decoration: none;
-    font-family: creepster, cursive;
-    color: #28641c;
-    transform: scale(1.5);
-    transition: all 0.3s;
-}
-
-/*Main body block with images and text grid setup*/
-@media only screen and (min-width: 601px){
-.bodyContainer {
-    display: grid;
-    grid-template-columns: 49% 2% 49%;
-}
-    .leftColumn{
-    background: black;
-    margin: 0px;
-    padding: 20px;
-}
-
-.leftColumnAttractions{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    background: black;
-    margin: 0px;
-    padding: 20px;
-}
-
-.rightColumn{
-    background: black;
-    margin: 0px;
-    padding: 20px;
-}
-
-.rightColumnAttractions{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    background: black;
-    margin: 0px;
-    padding: 20px;
-}
-}
-
-/*Main body text and image styling*/
-@media only screen and (max-width: 600px){
     /*Main body text and image styling*/
     .leftColumn{
         background: black;
@@ -351,39 +233,9 @@ header > h1{
         color: #ff7518;
         font-size: 20px;
         font-family: creepster, cursive;
-    }
-}
-
-@media only screen and (min-width: 601px){
-.subHeader {
-    text-align: center;
-    color: #ff7518;
-    font-family: creepster, cursive;
-    font-size: 35px;
-}
-
-.columnImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 15px;
-    border-color: #ff7518;
-}
-
-.mainTextDescription {
-    text-align: center;
-    color: #ff7518;
-    font-size: 25px;
-    font-family: creepster, cursive;
-}
-}
-
-/*Map section of the index page - grid setup*/
-
-@media only screen and (max-width: 600px){
-    #mainMap {
+    }    
+    
+        #mainMap {
         display: block;
         padding-bottom: 30px;
     }
@@ -413,10 +265,250 @@ header > h1{
         border-color: black;
         width: 80%;
     }
+
+    /*Buy tickets container styling*/
+    #tickets {
+        display: block;
+        background: black;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    #ticketsText {
+        text-align: center;
+        color: #ff7518;
+        font-family: creepster, cursive;
+        font-size: 30px;
+    }    
+
+        .selectBlockContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .ticketsSelect {
+        font-family: creepster, cursive;
+        float: left;
+        background: #ff7518;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 90%;
+        margin: auto;
+    }
+    
+   
+/*Ads section of the Services page styling*/ 
+    .adContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .ad {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .adImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 4px;
+        width: 150px;
+    }
+ 
+    /*Header styling*/
+    header {
+        display: block;
+        font-family: creepster, cursive;
+        font-size: 3.2vh;
+        text-align: center;
+        background: black;
+        color: #ff7518;
+        padding: 30px;
+        background-image: url("../images/background.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+        -webkit-text-stroke: 1px black;
+    }
+    .headerIcon {
+        display: none;
+    }    
+    
+    
+}
+/*#############END Mobile####################*/
+
+
+
+
+/*############DESKTOP STYLING#############*/
+@media only screen and (min-width: 601px){
+
+/*Header styling*/
+header{
+    display: block;
+    font-family:creepster, cursive;
+    font-size: 2.5em;
+    text-align: center;
+    background: black;
+    color: #ff7518;
+    padding: 30px;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+     -webkit-text-stroke: 1px black;
+}
+    
+header > h1{
+    margin-top: 1px;
+}
+    
+.bannerText {
+    margin: 0px;
+    font-size: 20px;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 5s linear infinite;
+    -webkit-animation: scroll-left 5s linear infinite;
+    animation: scroll-left 20s linear infinite;
+}    
+    
+    /*Set page border and shadow*/
+.page{
+    border: solid 2px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 56px 9px rgba(0,0,0,0.75);
+    
+}
+    /*Make images fit when screen resizes*/
+img{
+    max-width:100%;
+    height:auto
+}
+    
+/*Top navigation bar styling*/
+    #mobileNavBar {
+        display: none;
+    }
+    
+    nav {
+        display: grid;            
+        grid-template-columns: auto auto auto auto auto;
+        border-radius: 50px;
+        padding: 15px;
+        background: black;
+        text-align: center;
+        border: solid;
+        text-decoration: none;
+        color: #ff7518;
+        width: 96%;
+        margin:auto;
+    }
+
+    nav > a {
+        text-decoration: none;
+        font-family: creepster, cursive;
+        color: #ff7518;
+    }
+
+    .mobileLogo {
+        display: none;
+    }
+    
+    .mobileMenuIcon {
+        display: none;
+    }
+
+    .navMenuIcon {
+        visibility: hidden;
+    }
+    
+/*Top navigation bar hover styling*/
+nav > a:hover {
+    text-decoration: none;
+    font-family: creepster, cursive;
+    color: #28641c;
 }
 
-@media only screen and (min-width: 601px){
-    .map-container {
+nav > a:hover .navMenuIcon {
+    visibility: visible;
+}    
+
+    
+#theOtherNavBar > a{
+    text-decoration: none;
+    color: black;
+    font-family: creepster, cursive;
+    font-size: 25px;
+    padding-right: 40px;
+}
+    
+
+.subHeader {
+    text-align: center;
+    color: #ff7518;
+    font-family: creepster, cursive;
+    font-size: 35px;
+}
+
+.columnImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+    border-color: #ff7518;
+}
+
+.mainTextDescription {
+    text-align: center;
+    color: #ff7518;
+    font-size: 25px;
+    font-family: creepster, cursive;
+}    
+
+    
+/*Main body block with images and text grid setup*/
+.bodyContainer {
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+}
+    .leftColumn{
+    background: black;
+    margin: 0px;
+    padding: 20px;
+}
+
+.leftColumnAttractions{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background: black;
+    margin: 0px;
+    padding: 20px;
+}
+
+.rightColumn{
+    background: black;
+    margin: 0px;
+    padding: 20px;
+}
+
+.rightColumnAttractions{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background: black;
+    margin: 0px;
+    padding: 20px;
+}    
+   
+    
+    
+ .map-container {
         display: grid;
         grid-template-columns: auto;
         padding: 20px;
@@ -450,30 +542,10 @@ header > h1{
         border-width: 5px;
         border-radius: 15px;
         border-color: black;
-    }
-}
+    }   
+ 
     
-/*Buy tickets container styling*/
-.getTicketsContainer {
-    display: grid;
-}
-
-@media only screen and (max-width: 600px){
-    #tickets {
-        display: block;
-        background: black;
-        padding-bottom: 20px;
-        padding-top: 10px;
-    }
-    #ticketsText {
-        text-align: center;
-        color: #ff7518;
-        font-family: creepster, cursive;
-        font-size: 30px;
-    }
-}
-
-@media only screen and (min-width: 601px){
+    
 #tickets {
     display: block;
     background: black;
@@ -489,28 +561,10 @@ header > h1{
     color: #ff7518;
     font-family: creepster, cursive;
     font-size: 30px;
-}
-}
-
-
-
-@media only screen and (max-width: 600px){
-    .selectBlockContainer {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    .ticketsSelect {
-        font-family: creepster, cursive;
-        float: left;
-        background: #ff7518;
-        border-radius: 10px;
-        font-size: 20px;
-        width: 90%;
-        margin: auto;
-    }
-}
-
-@media only screen and (min-width: 601px){
+}  
+    
+    
+    
     .selectBlockContainer {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -524,60 +578,8 @@ header > h1{
         width: 40%;
         margin: auto;
     }
-}
-
-/*Buy tickets hover styling*/
-.ticketsSelect:hover {
-    border-color: #28641c;
-    border-width: 4px;
-    color: #28641c;
-}
-
-/*Buy tickets focus styling*/
-.ticketsSelect:focus {
-    border-color: #28641c;
-    border-width: 4px;
-    color: #28641c;
-}
-
-/*Styling of the subsections Other Services and Food in the services page*/
-.otherServicesContainer {
-    display: grid;
-}
-
-.servicesText {
-    text-align: center;
-    color: black;
-    font-family: creepster, cursive;
-    font-size: 30px;
-}
-
-/*Ads section of the Services page styling*/
-@media only screen and (max-width: 600px){
-    .adContainer {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .ad {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .adImage {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 20px;
-        border-style: solid;
-        border-width: 4px;
-        width: 150px;
-    }
-}
-
-@media only screen and (min-width: 601px){
+    
+    
     .adContainer {
         display: grid;
         grid-template-columns: auto auto;
@@ -598,9 +600,12 @@ header > h1{
         border-style: solid;
         border-width: 4px;
         width: 600px;
-    }
+    } 
+    
+    
+    
 }
-/*Footer styling*/
-#footer {
-    text-align: center;
-}
+/*########END DESKTOP STYLING#############*/
+
+
+
